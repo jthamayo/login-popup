@@ -1,18 +1,80 @@
 html{
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 
 body{
-    background-color: rgb(207, 203, 237);
+    background-color: rgb(229, 227, 250);
     height: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
 }
-.card{
+div.card{
     width: 50%;
+    min-width: 400px;
+    max-width: 450px;
     height: 90%;
     background-color: white;
-    box-shadow: 5px 10px;
+    box-shadow: 0px 0px 20px rgb(6, 6, 6, 0.2);
     border-radius: 20px;
+    text-align: center;
+}
+div.social-login{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+img{
+    height: 30px;
+}
+button.google-btn{
+    width: 67%;
+    height: 30%;
+    border-color: rgb(212, 212, 212);
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+button.fb-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    border-radius: 10px;
+    border-color: rgb(212, 212, 212);
+    background-color: transparent;
+}
+p.btn-text{
+    font-weight: 800;
+}
+.or{
+    font-size: large;
+    position: relative;
+}
+
+div.email-login{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+}
+
+h2.title{
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 196);
+}
+
+label{
+    color: rgb(135, 135, 135);
 }
