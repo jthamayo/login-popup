@@ -30,10 +30,10 @@ div.card{
     box-shadow: 0px 0px 20px rgb(6, 6, 6, 0.2);
     border-radius: 15px;
     text-align: center;
-    padding: 2% 0 3% 0;
+    padding: 3% 0;
 }
 div.social-login{
-    width: 380px;
+    width: 378px;
     display: flex;
     justify-content: center;
     gap: 2%;
@@ -44,7 +44,7 @@ button.google-btn img{
 button.google-btn{
     width: 65%;
     height: 56px;
-    border-color: rgb(212, 212, 212);
+    border-color: rgb(233, 233, 233);
     border-radius: 8px;
     background-color: transparent;
     display: flex;
@@ -73,18 +73,6 @@ p.btn-text{
     z-index: 3;
     position: relative;
 }
-span::before{
-    content: "";
-    box-shadow: 0 0 3px rgb(255, 255, 255);
-    z-index: 0;
-    background-color: rgb(255, 255, 255);
-    width: 20px;
-    height: 10px;
-    top: 40%;
-    left: 0;
-    position: absolute;
-
-}
 
 div.email-login{
     display: flex;
@@ -95,12 +83,26 @@ div.email-login{
     margin-bottom: 30px;
     position: relative;
 }
+
+/*-------line---------------------*/
+
 div.email-login::before{
-    background-color: black;
+    background-color: rgb(233, 233, 233);
     position: absolute;
+    left: -3px;
     content: "";
-    width: 308px;
-    height: 1px;
+    width: 45%;
+    height: 1.5px;
+    top: -23px;
+    z-index: 1;
+}
+div.email-login::after{
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    right: -3px;
+    content: "";
+    width: 45%;
+    height: 1.5px;
     top: -23px;
     z-index: 1;
 }
@@ -116,6 +118,11 @@ div.email-login input::placeholder{
     padding-left: 25px;
     font-size: 12px;
     color: rgb(105, 105, 105);
+}
+
+div.email-login input:focus{
+    border-color: rgb(74, 74, 192);
+    outline: none;
 }
 
 .email-login label{
@@ -147,9 +154,6 @@ form{
     align-items: center;
     justify-content: space-around;
     height: 100%;
-}
-span{
-    display: block;
 }
 
 a{
